@@ -76,10 +76,14 @@ if __name__ == '__main__':
         print('Dataset not supported!')
         exit()
     
-    if args.lr <= 0.01 and 0.001 <= args.lr:
+    if 0.001 <= args.lr and args.lr <= 0.01:
         args.lr_mul = 0.1
-    elif args.lr <= 0.001:
+    elif 0.0001 < args.lr and args.lr < 0.001:
         args.lr_mul = 1
+    elif args.lr <= 0.0001:
+        args.lr_mul = 10
+            
+
 
     set_gpu(args.gpu)
     if args.proto_attention:
