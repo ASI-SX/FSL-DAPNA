@@ -76,9 +76,9 @@ if __name__ == '__main__':
         print('Dataset not supported!')
         exit()
     
-    if 0.001 <= args.lr and args.lr <= 0.01:
+    if 0.001 < args.lr and args.lr <= 0.01:
         args.lr_mul = 0.1
-    elif 0.0001 < args.lr and args.lr < 0.001:
+    elif 0.0001 < args.lr and args.lr <= 0.001:
         args.lr_mul = 1
     elif args.lr <= 0.0001:
         args.lr_mul = 10
