@@ -5,10 +5,10 @@ python train.py --lambda_pre_fsl_loss 1 --lambda_da 1 --lambda_new_fsl_loss 1 --
 
 # for CUB
 # python train.py --lambda_pre_fsl_loss 1 --lambda_da 1 --lambda_new_fsl_loss 1 --proto_attention 1 --gpu 0 \
-# --dataset 'CUB' --model_type 'ResNet' --init_weights './saves/cub_wideresnet28_best.pth.tar'
+# --lr 0.001 --dataset 'CUB' --model_type 'ResNet' --init_weights './saves/cub_wideresnet28_best.pth.tar'
 # or
 # python train.py --lambda_pre_fsl_loss 1 --lambda_da 1 --lambda_new_fsl_loss 1 --proto_attention 0 --gpu 0 \
-# --max_epoch 40 --dataset 'CUB' --model_type 'ResNet' --init_weights './saves/cub_wideresnet28_best.pth.tar'
+# --lr 0.001 --dataset 'CUB' --model_type 'ResNet' --init_weights './saves/cub_wideresnet28_best.pth.tar'
 
 # the training_way n=10, need 2 GPUs with 24G memory. 
 # We set train_way=10 for tieredImageNet
